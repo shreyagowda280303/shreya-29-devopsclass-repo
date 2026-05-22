@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage ("1. clone the repo") {
+            steps {
+                echo "cloning the github repo"
+                sh "git clone git@github.com:shreyagowda280303/shreya-29-devopsclass-repo.git"
+            }
+        }
+
+        stage ("2. update the system") {
+            steps {
+
+            }
+        }
+
+
+        stage ("3. install the required packages") {
+            steps {
+                echo "install the important packages"
+                sh "yum install -y git"
+                sh ""
+
+            }
+        }
+
+        stage ("4. ")
+    }
+}
